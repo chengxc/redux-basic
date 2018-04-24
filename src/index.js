@@ -1,8 +1,8 @@
+//eslint-disable-next-line
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-/* eslint-disable */
+//eslint-disable-next-line
 import App from './App'
-/* eslint-enable */
 
 ReactDOM.render(<App />, document.getElementById('root'))

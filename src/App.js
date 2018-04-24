@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+//eslint-disable-next-line
+import React from 'react'
 import logo from './logo.svg'
 
 import store from './redux/store'
@@ -10,7 +11,7 @@ const action = type => store.dispatch(type)
 // 获取商品数据
 import productData from './json/product.json'
 
-class App extends Component {
+class App extends React.Component {
   constructor (props) {
     super(props)
 
