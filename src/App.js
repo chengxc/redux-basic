@@ -1,9 +1,11 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import logo from './logo.svg'
 
 import store from './redux/store'
 
 import {addProductFn, addSomeProductFn} from './redux/createAction'
+
+const action = type => store.dispatch(type)
 
 // 获取商品数据
 import productData from './json/product.json'
@@ -36,6 +38,7 @@ class App extends Component {
         <p>
           <input type="text" value={this.state.productName} onChange={this.changeInput}/>
           <button onClick={this.addProduct}>添加一个商品</button>
+          <button onClick={action('asyncGetInfo')}>获取用户信息></button>
         </p>
         <ul>
           {this.state.products && this
